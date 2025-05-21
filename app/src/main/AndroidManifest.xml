@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Aichatbot1"
+        tools:targetApi="31">
+
+        <!-- Make LoginActivity the launcher -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Other classes are not activities; remove or change if needed -->
+        <activity android:name=".RetrofitClient"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".OpenAIResponse"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".OpenAIRequest"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".OpenAIApi"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".ChatAdapter"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Message"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+    </application>
+
+</manifest>

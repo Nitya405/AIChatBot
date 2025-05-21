@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Gray Color -->
+    <color name="gray">#BDBDBD</color>
+
+    <!-- Primary App Color -->
+    <color name="primary">#6200EE</color> <!-- Or use any other HEX color -->
+</resources>
